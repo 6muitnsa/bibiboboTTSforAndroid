@@ -40,7 +40,7 @@
 
 ## 安装
 
-1. 安装 `bibibobo-tts.apk`（已导出到手机 Download）。
+1. 从 Releases 下载 `bibibobo-tts.apk`，或者按下面的「重新构建」自己编一个。
 2. 打开「哔哔啵啵」，点「用当前预设试听」确认出声；需要别的音色就新建/编辑预设。
 
 ## 使用
@@ -91,11 +91,3 @@ bash build.sh        # 产出 bibibobo-tts.apk
 
 合成算法来自 bibibobo（MIT, hakihakii / Lumoswitch），本包装同样 MIT。见 `LICENSE`
 （同时保留原作者与本项目的版权行）。
-
-## 发布到 GitHub
-
-- 仓库建议名：`bibibobo-tts-android`；topics：`android` `tts` `text-to-speech` `dsp`
-- **不要提交 `keystore.jks`**（已在 `.gitignore` 里）。正式发版必须用同一个签名密钥，
-  否则已装用户无法覆盖升级；CI 里的一次性密钥只适合测试分发。
-- `.github/workflows/build.yml` 每次 push 自动构建 APK 并上传 artifact。
-- 只分发 MIT 代码与自绘图标；不要打包原作者的视频、音频或美术资源。
