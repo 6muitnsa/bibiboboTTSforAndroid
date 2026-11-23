@@ -183,7 +183,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 showEditor(new Preset(String.valueOf(System.currentTimeMillis()),
-                        "我的预设 " + (presets.size() - 1), "fish", 0.13, 0, 0.22), true);
+                        "新预设 " + (presets.size() - 1), "fish", 0.13, 0, 0.22), true);
             }
         });
         body.addView(create, matchWrapTop(dp(14)));
