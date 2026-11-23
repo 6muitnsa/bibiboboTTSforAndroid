@@ -9,8 +9,7 @@ SDK_JAR=/usr/lib/android-sdk/platforms/android-23/android.jar
 R8_JAR=/tmp/r8.jar
 OUT=bibibobo-tts.apk
 VERSION_FILE=version.properties
-# 签名：本地默认用仓库外的 keystore.jks；正式发布请用固定密钥并放 CI secret，
-# 不要把 keystore 提交进仓库（泄露后别人可以冒名发更新）。
+# 签名：keystore 不入库，正式发布使用固定密钥（CI 通过 secret 注入）。
 KS_FILE=${KS_FILE:-keystore.jks}
 KS_PASS=${KS_PASS:-bibibobo}
 KS_ALIAS=${KS_ALIAS:-bibibobo}

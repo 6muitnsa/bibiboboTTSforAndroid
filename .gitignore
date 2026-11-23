@@ -4,7 +4,7 @@ build-test/
 *.apk
 *.apk.idsig
 
-# 签名（绝对不要提交：泄露后别人可以给你的用户发更新）
+# 签名密钥
 keystore.jks
 *.jks
 *.keystore
