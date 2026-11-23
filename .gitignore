@@ -1,0 +1,17 @@
+# 构建产物
+build/
+build-test/
+*.apk
+*.apk.idsig
+
+# 签名（绝对不要提交：泄露后别人可以给你的用户发更新）
+keystore.jks
+*.jks
+*.keystore
+
+# 本地文件
+local.properties
+.idea/
+*.iml
+.DS_Store
+*.wav
